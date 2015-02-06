@@ -1,0 +1,9 @@
+{
+	"sales": [
+		{
+			"store": "Store A",
+			"description": "40% off T-Shirts",
+			"imageURL": "http://collegeofsanmateo.edu/images/calendar/Tshirt.gif"			
+		}
+	]
+}
