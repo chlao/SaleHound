@@ -4,6 +4,11 @@
 			"store": "Store A",
 			"description": "40% off T-Shirts",
 			"imageURL": "http://collegeofsanmateo.edu/images/calendar/Tshirt.gif"			
+		}, 
+		{
+			"store": "Target", 
+			"description": "save 30% or more on Boots", 
+			"imageURL": "Target boots"
 		}
 	]
 }
