@@ -12,3 +12,12 @@ p {
 .img{
 	float: left;
 }
+
+.block{
+    width: 275px;
+    height: 275px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px; 
+}

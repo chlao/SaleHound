@@ -1,18 +1,24 @@
 <!doctype html> 
 
-<html>
+<!-- lang specifies the language of the element's content-->
+<html lang="en"> 
 <head>
+	<!-- Specifies the character encoding for the HTML document - Unicode-->
+	<!-- Meta is data and data-->
+	<meta charset="utf-8">
+	<!-- initial-scale=1 sets the intial zoom level when the page is first loaded by the browser-->
+	<meta name="viewport" content="width=device-width, intial-scale=1">
 	<title>My Home Page</title>
-	<!--Javascript Imports (NEED TO ADD THESE FILES IN)--> 
+	<!--Javascript Imports--> 
 	<script src="/js/jquery-1.11.0.js"> </script>
 	<script src="bootstrap-3.3.2-dist/js/bootstrap.js"> </script>
 
 	<!-- JQuery (necessary for Bootstrap's Javascript plugins)-->
 	<script type="text/javascript" src= "https://code.jquery.com/jquery.js"></script>
-	<!--<script type="text/javascript" src="/routes/index.js"></script>
-	<script type="text/javascript" src="handlebars-v3.0.0.js"></script>-->
+	<!--<script type="text/javascript" src="/routes/index.js"></script>-->
+	
 
-	<!--<script src="jquery.js"></script>-->
+	<script src="jquery.js"></script>
 	<script src="sticky/jquery.sticky.js"></script>
 	<script>
 	  $(document).ready(function(){
@@ -64,15 +70,16 @@
 	<div style="height:150px;border:4px solid #000;"><p>Scrolling is fun!</p></div>
 	<br>
 
+<!-- Using handlebars
 	{{#each sales}}
 	<div class="sales">
-		<img src="images/{{imageURL}}" class="img">
+		<img src="images/{{imageURL}}" class="img img-responsive">
 		<h1>{{store}}</h1>
 		<p>{{name}}</p>
 	</div>
 	{{/each}}
 
-    </div> 
+    </div> -->
 
 
 </body>
