@@ -15,6 +15,7 @@ $(document).ready(function() {
 */
 
 function initializePage(){
+	//$(".sale").find('button').css('height','50px'); 
 	// Expand sales when clicked to reveal more information 
 	/*
 	$("#saleposting").click(function(e){

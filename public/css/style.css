@@ -18,13 +18,33 @@ p {
 	src: url(../fonts/RNS-B.ttf);
 }
 
+@font-face{
+	font-family: CenturyGothic; 
+	src: url(../fonts/Century-Gothic.ttf)
+}
+
 h1{
 	font-family: RNSBarutaBlack; 
 }
 
-
-/*
-.sale{
-	height: 150px;
+h3{
+	font-family: CenturyGothic; 
 }
-*/
+
+
+.sale{
+	/*height: 150px;*/
+	font-family: CenturyGothic; 
+	/*
+	width:1000px;
+	max-width: 1000px; 
+	height: 150px;
+	max-height: 150px;
+	display: inline-block;
+	*/
+}
+
+.sale div input{
+	height:50px;
+	max-height: 50px;
+}

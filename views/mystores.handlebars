@@ -19,8 +19,11 @@
     <!-- JQuery (necessary for Bootstrap's Javascript plugins)-->
     <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
 
+    <script src="js/header.js"></script>
+
     <!--- Link to external style sheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
 
 </head>
 
@@ -28,12 +31,16 @@
 <body>
 	<!-- Buttons -->
     <div class="container">
-    	<a href="/"> <input type="button" value="Home"></a>
-    	<a href="/myStores"> <input type="button" value="My Stores"></a>
-    	<a href="/allStores"> <input type="button" value="All Stores"></a>
-    	<a href="/account"> <input type="button" value="Manage Account"></a>
-    	<a href="/saleWatch"> <input type="button" value="Sale Watch"></a>
-    	<a href="/help"><input type="button" value="Help" style="float: right;"></a>
+        <div id ="sticker" class="cssmenu">
+            <ul class="nav">
+                <li><a href="/"><span>Home</span></a></li>
+                <li class="active"><a href="/myStores"><span>My Stores</span></a></li>
+                <li><a href="/allStores"><span>All Stores</span></a></li>
+                <li><a href="/account"><span>Manage Account</span></a></li>
+                <li><a href="/saleWatch"><span>Sale Watch</span></a></li>
+                <li class="last"><a href="/help"><span>Help</span></a></li>
+            </ul>
+        </div>
 
 <br>
 <br>
