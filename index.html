@@ -7,16 +7,18 @@
 	<!-- Meta is data and data-->
 	<meta charset="utf-8">
 	<!-- initial-scale=1 sets the intial zoom level when the page is first loaded by the browser-->
-	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My Home Page</title>
-	<!--Javascript Imports--> 
-	<script src="/js/jquery-1.11.0.js"> </script>
+
+	<!--Javascript Imports -->
+	<script src="routes/jquery-1.11.0.js"> </script>
 	<script src="bootstrap-3.3.2-dist/js/bootstrap.js"> </script>
 
 	<!-- JQuery (necessary for Bootstrap's Javascript plugins)-->
-	<script type="text/javascript" src= "https://code.jquery.com/jquery.js"></script>
-	<!--<script type="text/javascript" src="/routes/index.js"></script>-->
-	
+	<script src= "https://code.jquery.com/jquery.js"></script>
+		<!-- Link to external javascript --> 
+	<script src="routes/index.js"></script>
+	<script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
 
 	<script src="jquery.js"></script>
 	<script src="sticky/jquery.sticky.js"></script>
@@ -38,7 +40,7 @@
 <body>
 	<div class = "container">
 	<!-- Buttons -->
-	<div id = "sticker">
+	<div id ="sticker">
 		<a href="index.html"> <input type="button" value="Home"></a>
 		<a href="myStores.html"> <input type="button" value="My Stores"></a>
 		<a href="allStores.html"> <input type="button" value="All Stores"></a>
@@ -61,13 +63,69 @@
 	</div>
 
 	<!-- Feed -->
-	<div style="height:150px;border:4px solid #000;"><p>This is a sale!</p></div>
+	<div>
+		<a href="#" class="thumbnail" id="saleposting">
+			<div align="center">
+				This is a sale!
+			</div>
+			<img src="stores/BestBuy.png" align="left" height="150" width="150">
+			<div align="right">
+				<input type="button" name="watch" value="Watch Sale" style="height:150px;width:150px;">
+			</div>
+		</a>
+	</div>
 	<br>
-	<div style="height:150px;border:4px solid #000;"><p>This is another sale!</p></div>
+
+	<div id="saleposting">
+		<a href="#" class="thumbnail">
+			<div align="center">
+				This is a sale!
+			</div>
+			<img src="stores/BestBuy.png" align="left" height="150" width="150">
+			<div align="right">
+				<input type="button" name="watch" value="Watch Sale" style="height:150px;width:150px;">
+			</div>
+		</a>
+	</div>
+
 	<br>
-	<div style="height:150px;border:4px solid #000;"><p>This is the best sale!</p></div>
+
+	<div id="saleposting">
+		<a href="#" class="thumbnail">
+			<div align="center">
+				This is a sale!
+			</div>
+			<img src="stores/Macys.jpg" align="left" height="150" width="150">
+			<div align="right">
+				<input type="button" name="watch" value="Watch Sale" style="height:150px;width:150px;">
+			</div>
+		</a>
+	</div>
+
 	<br>
-	<div style="height:150px;border:4px solid #000;"><p>Scrolling is fun!</p></div>
+	<div id="saleposting">
+		<a href="#" class="thumbnail">
+			<div align="center">
+				This is a sale!
+			</div>
+			<img src="stores/Express.jpg" align="left" height="150" width="150">
+			<div align="right">
+				<input type="button" name="watch" value="Watch Sale" style="height:150px;width:150px;">
+			</div>
+		</a>
+	</div>
+	<br>
+	<div id="saleposting">
+		<a href="#" class="thumbnail">
+			<div align="center">
+				This is a sale!
+			</div>
+			<img src="stores/Nordstrom.jpg" align="left" height="150" width="150">
+			<div align="right">
+				<input type="button" name="watch" value="Watch Sale" style="height:150px;width:150px;">
+			</div>
+		</a>
+	</div>
 	<br>
 
 <!-- Using handlebars
@@ -80,7 +138,6 @@
 	{{/each}}
 
     </div> -->
-
 
 </body>
 </html>
