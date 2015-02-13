@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    <title>My Stores</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Bootstrap imports --> 
+    <link href="js/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <script src="js/bootstrap-3.3.2-dist/js/bootstrap.js"> </script>
+
+    <!-- JQuery (necessary for Bootstrap's Javascript plugins)-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+
+    <!--- Link to external style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+
+<body>
+	<!-- Buttons -->
+    <div class="container">
+    	<a href="/"> <input type="button" value="Home"></a>
+    	<a href="/myStores"> <input type="button" value="My Stores"></a>
+    	<a href="/allStores"> <input type="button" value="All Stores"></a>
+    	<a href="/account"> <input type="button" value="Manage Account"></a>
+    	<a href="/saleWatch"> <input type="button" value="Sale Watch"></a>
+    	<a href="/help"><input type="button" value="Help" style="float: right;"></a>
+
+<br>
+<br>
+<div align="center">
+<h1>Manage My Stores</h1>
+</div>
+<!-- Horizontal Rule -->
+<hr style="height:5px;border-color:black;background-color:black" />
+<!-- STORES -->
+<br>
+<br>
+
+<!-- Bootstrap grid system-->
+<div class="row">
+{{#each stores}}
+    <img src = "/images/stores/{{imageURL}}" class="block img-rounded img-responsive span4">
+{{/each}}
+</div>
+</div>
+</body>
+
+</html>

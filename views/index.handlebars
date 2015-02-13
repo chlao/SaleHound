@@ -1,0 +1,82 @@
+<!doctype html> 
+
+<!-- lang specifies the language of the element's content-->
+<html lang="en"> 
+<head>
+	<!-- Specifies the character encoding for the HTML document - Unicode-->
+	<!-- Meta is data and data-->
+	<meta charset="utf-8">
+	<!-- initial-scale=1 sets the intial zoom level when the page is first loaded by the browser-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Home Page</title>
+
+	<!--Javascript Imports -->
+	<script src="/js/jquery-1.11.0.js"> </script>
+	<script src="/js/bootstrap-3.3.2-dist/js/bootstrap.js"> </script>
+
+	<!-- JQuery (necessary for Bootstrap's Javascript plugins)-->
+	<script src= "https://code.jquery.com/jquery.js"></script>
+		<!-- Link to external javascript --> 
+	<script src="index.js"></script>
+	<script src="/js/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+
+	<!--<script src="/js/jquery.js"></script>-->
+	<script src="/js/sticky/jquery.sticky.js"></script>
+	<script>
+	  $(document).ready(function(){
+	    $("#sticker").sticky({topSpacing:0});
+	  });
+	</script>
+
+    <!-- Bootstrap imports --> 
+	<link href="/js/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/js/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+	<!--- Link to external style sheet -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+
+<body>
+	<div class = "container">
+	<!-- Buttons -->
+	<div id ="sticker">
+		<a href="/"> <input type="button" value="Home"></a>
+		<a href="/myStores"> <input type="button" value="My Stores"></a>
+		<a href="/allStores"> <input type="button" value="All Stores"></a>
+		<a href="/account"> <input type="button" value="Manage Account"></a>
+		<a href="/saleWatch"> <input type="button" value="Sale Watch"></a>
+		<a href="/help"><input type="button" value="Help" style="float: right;"></a>
+	</div>
+
+	<!-- Welcome Banner -->
+	<div align="center">
+		<h1>Welcome to SaleHound!</h1>
+	</div>
+
+	<!-- Horizontal Rule -->
+	<hr style="height:5px;border-color:black;background-color:black" />
+
+	<!-- Subscribed Stores -->
+	<div align="center">
+		<h3>Subscribed Stores</h3>
+	</div>
+
+	<!-- Feed -->
+
+	{{#each sales}}
+	<div>
+		<a href="#" class="thumbnail">
+			<div align="center" style="font-size:25px">
+				{{description}}
+			</div>
+			<img src="images/stores/{{imageURL}}" class="img img-responsive" align="left" height="150" width="150">
+			<div align="right">
+				<input type="button" name="watch" value="Watch Sale" style="height:150px;width:150px;">
+			</div>
+		</a>
+	</div>
+	{{/each}}
+
+</body>
+</html>

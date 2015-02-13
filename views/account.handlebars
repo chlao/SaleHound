@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>Create or Sign in to Your Account!</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+
+	<link href="js/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="js/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+	<script src="js/bootstrap-3.3.2-dist/js/bootstrap.js"> </script>
+
+	<!-- JQuery (necessary for Bootstrap's Javascript plugins)-->
+	<script type="text/javascript" src= "https://code.jquery.com/jquery.js"></script>
+
+	<!--- Link to external style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class="container">
+	<!-- Buttons -->
+	<a href="/"> <input type="button" value="Home"></a>
+	<a href="mystores"> <input type="button" value="My Stores"></a>
+	<a href="allstores"> <input type="button" value="All Stores"></a>
+	<a href="account"> <input type="button" value="Manage Account"></a>
+	<a href="salewatch"> <input type="button" value="Sale Watch"></a>
+	<a href="help"><input type="button" value="Help" style="float: right;"></a>
+	
+	<!-- Horizontal Rule -->
+	<hr style="height:5px;border-color:black;background-color:black" />
+
+	<!-- Sign In Banner -->
+	<div align="center">
+		<h1>Sign In to SaleHound!</h1>
+	<form>
+			<div class="form-group">
+			User Name:<br>
+			<input type="text" name="username" class="form-control">
+			<br><br>
+			Password:<br>
+			<input type="password" name="password" class="form-control">
+			<br><br>
+			<b>Forgot Password?</b><br>Enter Your Email Address:<br>
+			<input type="text" name="forgot" class="form-control">
+			<br><br>
+			<input type="submit" value="Submit" class="btn btn-default">
+		</div>
+	</form>
+	</div>
+
+
+	<!-- Sign Up Banner -->
+	<div align="center">
+		<h1>Sign Up for a New Account!</h1>
+	<form role="form">
+		<div class="form-group">
+		User Name:<br>
+		<input type="text" name="username" class="form-control">
+		<br><br>
+		Password:<br>
+		<input type="password" name="password" class="form-control">
+		<br><br>
+		Email Address:<br>
+		<input type="text" name="email" class="form-control">
+		<br><br>
+		</div>
+		<input type="submit" value="Create" class="btn btn-default">
+	</form>
+	</div>
+</div> <!-- End of Bootstrap container -->
+</body>

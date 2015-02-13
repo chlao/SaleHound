@@ -1,0 +1,36 @@
+{
+	"stores": [
+		{
+			"name": "Best Buy",
+			"imageURL": "BestBuy.png"			
+		},
+		{
+			"name": "Jamba Juice",
+			"imageURL": "JambaJuice.jpg"			
+		},
+		{
+			"name": "Burger King",
+			"imageURL": "BurgerKing.png"
+		},
+		{
+			"name": "Abercrombie & Fitch",
+			"imageURL": "Abercrombie-Fitch.jpg"
+		},
+				{
+			"name": "sephora",
+			"imageURL": "sephora.png"
+		},
+		{
+			"name": "The North Face",
+			"imageURL": "TheNorthFace.png"
+		},
+		{
+			"name": "Apple",
+			"imageURL": "Apple.png"
+		},
+		{
+			"name": "Forever 21",
+			"imageURL": "forever21.png"
+		}
+	]
+}

@@ -1,12 +1,36 @@
 {
 	"stores": [
 		{
-			"name": "Macy's",
-			"imageURL": "http://img1.wikia.nocookie.net/__cb20131222155006/logopedia/images/thumb/b/b8/Macy's_Vertical_Logo.svg/238px-Macy's_Vertical_Logo.svg.png"			
+			"name": "Target",
+			"imageURL": "Target.png"			
 		},
 		{
-			"name": "Best Buy",
-			"imageURL": "https://lh4.ggpht.com/V0FLPg_x0Ka3b4kfCLURzJtaF99pvFc34KS5LCpxkHsXrjTMzWb7b6FqihR2McWFUZw=w300"			
+			"name": "Amazon",
+			"imageURL": "Amazon.jpg"			
+		},
+		{
+			"name": "American Eagle Outfitters",
+			"imageURL": "AmericanEagleOutfitters.png"
+		},
+		{
+			"name": "Cold Stone Creamery",
+			"imageURL": "ColdStone.jpg"
+		},
+				{
+			"name": "H&M",
+			"imageURL": "H&M.jpg"
+		},
+		{
+			"name": "HP",
+			"imageURL": "HP.png"
+		},
+		{
+			"name": "Macy's",
+			"imageURL": "Macys.jpg"
+		},
+		{
+			"name": "Starbucks",
+			"imageURL": "starbucks.jpg"
 		}
 	]
 }

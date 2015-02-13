@@ -1,14 +1,29 @@
 {
 	"sales": [
 		{
-			"store": "Store A",
-			"description": "40% off T-Shirts",
-			"imageURL": "http://collegeofsanmateo.edu/images/calendar/Tshirt.gif"			
+			"store": "Best Buy",
+			"description": "40% off Lenovo Laptops",
+			"imageURL": "BestBuy.png"			
 		}, 
 		{
+			"store": "BestBuy", 
+			"description": "30% or more on Boots", 
+			"imageURL": "Target.png"
+		},
+		{
+			"store": "Macy's", 
+			"description": "Free Tote with $45 Purchase", 
+			"imageURL": "Macys.jpg"
+		},
+		{
 			"store": "Target", 
-			"description": "save 30% or more on Boots", 
-			"imageURL": "Target boots"
+			"description": "20% off Fragrances", 
+			"imageURL": "Target.png"
+		},
+		{
+			"store": "Express", 
+			"description": "25% off all sweaters", 
+			"imageURL": "Express.jpg"
 		}
 	]
 }

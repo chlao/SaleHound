@@ -1,0 +1,28 @@
+p {
+	text-align:center;
+	font-size:20px;
+	line-height:100px;
+}
+
+.img{
+	float: left;
+}
+
+.block{
+    width: 275px;
+    height: 275px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px; 
+}
+
+@font-face{
+	font-family: RNSBarutaBlack; 
+	src: url(../fonts/rns-b.ttf);
+}
+
+h1{
+	font-family: RNSBarutaBlack; 
+}
+

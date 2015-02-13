@@ -1,8 +1,9 @@
+/*
 'use strict';
 var statik = require('statik');
 var server = statik.createServer('.');
 server.listen();
-
+*/
 
 /**
  * Module dependencies.
@@ -12,7 +13,13 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
+//These are javascript files 
 var index = require('./routes/index');
+var account = require('./routes/account'); 
+var mystores = require('./routes/mystores'); 
+var allstores = require('./routes/allstores'); 
+var salewatch = require('./routes/salewatch'); 
+var help = require('./routes/help'); 
 // Example route
 // var user = require('./routes/user');
 
@@ -39,7 +46,14 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
+//'\' registers the URL localhost:3000/ 
+// call the project.viewProject()  function when that URL is requested
 app.get('/', index.view); 
+app.get('/account', account.view); 
+app.get('/mystores', mystores.view); 
+app.get('/allstores', allstores.view); 
+app.get('/salewatch', salewatch.view); 
+app.get('/help', help.view); 
 // Example route
 // app.get('/users', user.list);
 
