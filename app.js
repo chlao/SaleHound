@@ -20,6 +20,7 @@ var mystores = require('./routes/mystores');
 var allstores = require('./routes/allstores'); 
 var salewatch = require('./routes/salewatch'); 
 var help = require('./routes/help'); 
+//var stick = require('./public/js/sticky/jquery.sticky'); 
 // Example route
 // var user = require('./routes/user');
 

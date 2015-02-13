@@ -4,10 +4,6 @@ p {
 	line-height:100px;
 }
 
-.img{
-	float: left;
-}
-
 .block{
     width: 275px;
     height: 275px;
@@ -19,10 +15,16 @@ p {
 
 @font-face{
 	font-family: RNSBarutaBlack; 
-	src: url(../fonts/rns-b.ttf);
+	src: url(../fonts/RNS-B.ttf);
 }
 
 h1{
 	font-family: RNSBarutaBlack; 
 }
 
+
+/*
+.sale{
+	height: 150px;
+}
+*/
