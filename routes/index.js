@@ -1,10 +1,17 @@
-'use strict'
+//'use strict'
 
 var sales = require('../sales.json');
+var models = require('../models'); 
 
 exports.view = function(req, res){
-	console.log(sales);
-	res.render('index', sales);
+	models.Sale
+		.find()
+		.exec(displaySales); 
+
+	function displaySales(err, sales){
+		console.log(sales);
+		res.render('index', {'sales': sales});
+	}
 };
 
 // Call this function when the page loads (the "ready" event)
@@ -12,8 +19,8 @@ exports.view = function(req, res){
 $(document).ready(function() {
 	initializePage();
 })
-*/
 
+/*
 function initializePage(){
 	//$(".sale").find('button').css('height','50px'); 
 	// Expand sales when clicked to reveal more information 
@@ -38,7 +45,7 @@ function initializePage(){
 		$(this).stop(); 
 		$(this).fadeIn(0); 
 		$(this).fadeOut(); 
-	}); */
-}
+	}); 
+}*/
 
 

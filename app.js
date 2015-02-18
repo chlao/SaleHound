@@ -11,9 +11,10 @@ server.listen();
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars'); 
+var mongoose = require('mongoose');
 
-//These are javascript files 
+//These are javascript files (controller) 
 var index = require('./routes/index');
 var account = require('./routes/account'); 
 var mystores = require('./routes/mystores'); 
@@ -23,6 +24,13 @@ var help = require('./routes/help');
 //var stick = require('./public/js/sticky/jquery.sticky'); 
 // Example route
 // var user = require('./routes/user');
+
+// Connect to the Mongo database, whether locally or on Heroku
+// MAKE SURE TO CHANGE THE NAME FROM 'lab7' TO ... IN OTHER PROJECTS
+var local_database_name = 'salehound';
+var local_database_uri  = 'mongodb://localhost/' + local_database_name
+var database_uri = process.env.MONGOLAB_URI || local_database_uri
+mongoose.connect(database_uri);
 
 var app = express();
 
