@@ -21,7 +21,6 @@ var local_database_uri  = 'mongodb://localhost/' + local_database_name
 var database_uri = process.env.MONGOLAB_URI || local_database_uri
 mongoose.connect(database_uri);
 
-
 // Do the initialization here
 
 // Step 1: load the JSON data
@@ -53,7 +52,7 @@ function onceClear(err) {
         console.log('DONE');
         // The script won't terminate until the 
         // connection to the database is closed
-        mongoose.connection.close()
+        //mongoose.connection.close()
       }
     });
   }

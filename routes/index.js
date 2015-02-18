@@ -1,6 +1,6 @@
 //'use strict'
 
-var sales = require('../sales.json');
+//var sales = require('../sales.json');
 var models = require('../models'); 
 
 exports.view = function(req, res){

@@ -1,4 +1,4 @@
-var stores = require('../stores.json');
+//var stores = require('../stores.json');
 /*
 exports.view = function(req, res){
 	res.render('mystores', stores);
@@ -12,8 +12,8 @@ exports.view = function(req, res){
 		.find()
 		.exec(displayStores); 
 
-	function displayStores(err, mystores){
-		console.log(stores);
-		res.render('index', {'mystores': mystores});
+	function displayStores(err, stores){
+		console.log(stores); 
+		res.render('mystores', {'stores': stores});
 	}
 };
