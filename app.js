@@ -60,9 +60,15 @@ if ('development' == app.get('env')) {
 app.get('/', index.view); 
 app.get('/account', account.view); 
 app.get('/mystores', mystores.view); 
-app.get('/allstores', allstores.view); 
-app.get('/salewatch', salewatch.view); 
+app.get('/allstores', allstores.view);
+app.get('/salewatch', salewatch.view);
+//app.post('/salewatch', salewatch.unwatchSale); 
+app.post('/salewatch/:id/unwatch', salewatch.unwatchSale);
+app.post('/allstores/:id/subscribe', allstores.subscribe);
+app.post('/:id/watch', index.watch);
 app.get('/help', help.view); 
+
+//app.post('/salewatch/unwatch', salewatch.unwatchSale);
 // Example route
 // app.get('/users', user.list);
 

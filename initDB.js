@@ -52,15 +52,15 @@ function onceClear(err) {
         console.log('DONE');
         // The script won't terminate until the 
         // connection to the database is closed
-        //mongoose.connection.close()
+        mongoose.connection.close()
       }
     });
   }
 }
 
-var mystores_json = require('./stores.json').stores; 
+var mystores_json = require('./allstores.json').stores; 
 
-models.MyStores
+models.Store
   .find()
   .remove()
   .exec(onceClearMyStores);
@@ -72,7 +72,7 @@ function onceClearMyStores(err){
   var to_save_count = mystores_json.length;
   for(var i=0; i<mystores_json.length; i++) {
     var json = mystores_json[i];
-    var mystore = new models.MyStores(json);
+    var mystore = new models.Store(json);
 
     mystore.save(function(err, mystore) {
       if(err) console.log(err);

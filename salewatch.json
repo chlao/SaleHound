@@ -6,7 +6,7 @@
 			"imageURL": "BestBuy.png"			
 		}, 
 		{
-			"store": "BestBuy", 
+			"store": "Target", 
 			"description": "30% or more on Boots", 
 			"imageURL": "Target.png"
 		},
@@ -23,6 +23,11 @@
 		{
 			"store": "Express", 
 			"description": "25% off all sweaters", 
+			"imageURL": "Express.jpg"
+		},
+		{
+			"store": "Express", 
+			"description": "250% off all suits", 
 			"imageURL": "Express.jpg"
 		}
 	]

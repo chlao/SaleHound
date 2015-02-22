@@ -1,6 +1,6 @@
 //'use strict'
 
-//var sales = require('../sales.json');
+var sales = require('../sales.json');
 var models = require('../models'); 
 
 exports.view = function(req, res){
@@ -13,6 +13,19 @@ exports.view = function(req, res){
 		res.render('index', {'sales': sales});
 	}
 };
+
+exports.watch = function(req, res){
+	var saleID = req.params.id;
+
+	models.Sale
+		.find({"id": saleID})
+		.update({"watched":0},{$set:{"watched":1}})
+		.exec(afterWatch);
+
+	function afterWatch(err){
+		res.send();
+	}
+}
 
 // Call this function when the page loads (the "ready" event)
 /*
