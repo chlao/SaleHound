@@ -1,36 +1,8 @@
 {
 	"stores": [
 		{
-			"name": "Target",
-			"imageURL": "Target.png"			
-		},
-		{
-			"name": "Amazon",
-			"imageURL": "Amazon.jpg"			
-		},
-		{
-			"name": "American Eagle Outfitters",
-			"imageURL": "AmericanEagleOutfitters.png"
-		},
-		{
-			"name": "Cold Stone Creamery",
-			"imageURL": "ColdStone.jpg"
-		},
-		{
-			"name": "H&M",
-			"imageURL": "H&M.jpg"
-		},
-		{
-			"name": "HP",
-			"imageURL": "HP.png"
-		},
-		{
-			"name": "Macy's",
-			"imageURL": "Macys.jpg"
-		},
-		{
-			"name": "Starbucks",
-			"imageURL": "starbucks.jpg"
+			"name": "Best Buy",
+			"imageURL": "BestBuy.png"			
 		}
 	]
 }

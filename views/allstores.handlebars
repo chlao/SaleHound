@@ -3,21 +3,34 @@
 <html lang="en">
 <head>
 
+    <meta charset="utf-8">
+    <!-- initial-scale=1 sets the intial zoom level when the page is first loaded by the browser-->
+    <meta name="viewport" content="width=device-width, iniitial-scale=1">
     <title>Browse All Stores</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <!--Javascript Imports -->
+    <script src="/js/jquery-1.11.0.js"> </script>
+    <script src="/js/bootstrap-3.3.2-dist/js/bootstrap.js"> </script>
+
+    <!-- JQuery (necessary for Bootstrap's Javascript plugins)-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Link to external javascript --> 
+    
+    <script src="/js/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+
+    <script src="/js/jquery-sticky.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#sticker").sticky({topSpacing:0});
+      });
+    </script>
 
     <!-- Bootstrap imports --> 
     <link href="/js/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/js/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
-    <script src="/js/bootstrap-3.3.2-dist/js/bootstrap.js"> </script>
-
-    <!-- JQuery (necessary for Bootstrap's Javascript plugins)-->
-    <script type="text/javascript" src= "https://code.jquery.com/jquery.js"></script>
-
     <script src="js/header.js"></script>
+    <script src="js/subscribe.js"></script>
 
     <!--- Link to external style sheet -->
     <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -52,9 +65,13 @@
 <br>
 <!-- Bootstrap grid system-->
 
-<div class="row">
-{{#each stores}}
-    <img src = "/images/stores/{{imageURL}}" class="block img-rounded img-responsive span4">
+{{#each allstores.stores}}
+    <div>
+        <a href="#" class="store" id="{{id}}">
+            <img src = "/images/stores/{{imageURL}}" class="block img-rounded img-responsive span">
+            <input type="button" name="subscribe" id="subscribe" value="Subscribe to Store" style="height:150px;width:150px;" class="btn btn-default">
+        </a>
+    </div>
 {{/each}}
 
 <!-- Using handlebars 
@@ -63,7 +80,7 @@
     <img src = "/images/{{imageURL}}" class = "img-rounded img-responsive">
 </div>
 {{/each}}-->
-</div>
+
 </body>
 
 </html>

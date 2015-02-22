@@ -57,7 +57,9 @@
 <!-- Bootstrap grid system-->
 <div class="row">
 {{#each stores}}
-    <img src = "/images/stores/{{imageURL}}" class="block img-rounded img-responsive span4">
+{{#if subscribed}}
+    <a href="#" class="unsubscribe"><img src = "/images/stores/{{imageURL}}" class="block img-rounded img-responsive span4"></a>
+{{/if}}
 {{/each}}
 </div>
 </div>
