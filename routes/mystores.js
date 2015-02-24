@@ -8,6 +8,7 @@ exports.view = function(req, res){
 		.exec(displayStores);
 
 	function displayStores(err, stores){
+		console.log(stores); 
 		res.render('mystores', {'stores': stores});
 	}
 }
