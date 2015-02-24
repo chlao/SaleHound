@@ -9,9 +9,9 @@ function initializePage(){
 		console.log(storeID);
 		var stores_div = $('#store' + storeID);
 
-		$.post('/allstores/'+storeID+'/subscribe', function(){
-			window.location.href = '/allstores';
-	});
+		$.post('/mystores/'+storeID+'/unsubscribe', function(){
+			window.location.href = '/mystores';
+		});
 
 		/*stores_div.find('.subscribe').click(function(e){
 			e.preventDefault();

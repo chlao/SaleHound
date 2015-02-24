@@ -19,14 +19,14 @@
 			"store": "Macy's", 
 			"description": "Free Tote with $45 Purchase", 
 			"imageURL": "Macys.jpg",
-			"watched": 0
+			"watched": 1
 		},
 		{
 			"id": "4",
 			"store": "Target", 
 			"description": "20% off Fragrances", 
 			"imageURL": "Target.png",
-			"watched": 0
+			"watched": 1
 		},
 		{
 			"id": "5",

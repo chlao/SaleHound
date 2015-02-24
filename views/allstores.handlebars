@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <!-- initial-scale=1 sets the intial zoom level when the page is first loaded by the browser-->
-    <meta name="viewport" content="width=device-width, iniitial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Browse All Stores</title>
 
     <!--Javascript Imports -->
@@ -66,10 +66,10 @@
 <!-- Bootstrap grid system-->
 
 {{#each allstores.stores}}
-    <div>
-        <a href="#" class="store" id="{{id}}">
+    <div class="store" id="{{id}}">
+        <a href="#">
             <img src = "/images/stores/{{imageURL}}" class="block img-rounded img-responsive span">
-            <input type="button" name="subscribe" id="subscribe" value="Subscribe to Store" style="height:150px;width:150px;" class="btn btn-default">
+            <!--<input type="button" name="subscribe" id="subscribe" value="Subscribe to Store" style="height:150px;width:150px;" class="btn btn-default">-->
         </a>
     </div>
 {{/each}}

@@ -58,7 +58,7 @@ function onceClear(err) {
   }
 }
 
-var mystores_json = require('./allstores.json').stores; 
+var mystores_json = require('./allstores.json'); 
 
 models.Store
   .find()

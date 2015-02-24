@@ -15,9 +15,11 @@ exports.view = function(req, res){
 
 exports.unwatchSale = function(req, res){
 	var saleID = req.params.id;
+	//console.log("saleID from routes: " + saleID);
+	var idNum = saleID.substr('sale'.length);
 
 	models.Sale
-		.find({"id": saleID})
+		.find({"id": idNum})
 		.update({"watched":1},{$set:{"watched":0}})
 		.exec(afterUnwatch);
 
