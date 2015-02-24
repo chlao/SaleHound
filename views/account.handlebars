@@ -51,42 +51,43 @@
     </div>
 
 	<!-- Sign In Banner -->
-	<div align="center">
-		<h1>Sign In to SaleHound!</h1>
-	<form>
+	<div class="container">
+		<div align="center" >
+			<h1>Sign In to SaleHound!</h1>
+		<form>
+				<div class="form-group">
+				User Name:<br>
+				<input type="text" name="username" class="form-control">
+				<br><br>
+				Password:<br>
+				<input type="password" name="password" class="form-control">
+				<br><br>
+				<b>Forgot Password?</b><br>Enter Your Email Address:<br>
+				<input type="text" name="forgot" class="form-control">
+				<br><br>
+				<input type="submit" value="Submit" class="btn btn-default">
+			</div>
+		</form>
+		</div>
+
+
+		<!-- Sign Up Banner -->
+		<div align="center">
+			<h1>Sign Up for a New Account!</h1>
+		<form role="form">
 			<div class="form-group">
-			User Name:<br>
-			<input type="text" name="username" class="form-control">
+			<label for="user">User Name:</label>
+			<input type="text" name="username" class="form-control" method="formpost">
 			<br><br>
-			Password:<br>
-			<input type="password" name="password" class="form-control">
+			<label for="pass">Password:</label>
+			<input type="password" name="password" class="form-control"method="formpost">
 			<br><br>
-			<b>Forgot Password?</b><br>Enter Your Email Address:<br>
-			<input type="text" name="forgot" class="form-control">
+			<label for="email">Email Address:</label>
+			<input type="text" name="email" class="form-control" method="formpost">
 			<br><br>
-			<input type="submit" value="Submit" class="btn btn-default">
+			</div>
+			<input type="submit" value="Create" class="btn btn-default" id="newAccountSubmit">
+		</form>
 		</div>
-	</form>
-	</div>
-
-
-	<!-- Sign Up Banner -->
-	<div align="center">
-		<h1>Sign Up for a New Account!</h1>
-	<form role="form">
-		<div class="form-group">
-		<label for="user">User Name:</label>
-		<input type="text" name="username" class="form-control" method="formpost">
-		<br><br>
-		<label for="pass">Password:</label>
-		<input type="password" name="password" class="form-control"method="formpost">
-		<br><br>
-		<label for="email">Email Address:</label>
-		<input type="text" name="email" class="form-control" method="formpost">
-		<br><br>
-		</div>
-		<input type="submit" value="Create" class="btn btn-default" id="newAccountSubmit">
-	</form>
-	</div>
-</div> <!-- End of Bootstrap container -->
+	</div> <!-- End of Bootstrap container -->
 </body>
