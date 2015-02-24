@@ -1,4 +1,3 @@
-
 /*
   This script will initialize a local Mongo database
   on your machine so you can do development work.
@@ -52,13 +51,13 @@ function onceClear(err) {
         console.log('DONE');
         // The script won't terminate until the 
         // connection to the database is closed
-        mongoose.connection.close()
+        //mongoose.connection.close()
       }
     });
   }
 }
 
-var mystores_json = require('./allstores.json'); 
+var mystores_json = require('./allstores.json').stores; 
 
 models.Store
   .find()

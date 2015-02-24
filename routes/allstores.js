@@ -1,4 +1,4 @@
-var allstores = require('../allstores.json');
+//var allstores = require('../allstores.json');
 var models = require('../models');
 
 exports.view = function(req, res){
@@ -8,20 +8,21 @@ exports.view = function(req, res){
 
 	function displayStores(err, stores){
 		//console.log(allstores);
-		res.render('allstores', {'allstores': allstores});
+		res.render('allstores', {'stores': stores});
 	}
 }
 
 exports.subscribe = function(req, res){
 	var storeID = req.params.id;
-	console.log(storeID);
+	console.log(storeID + "subscribe in allstores");
 
 	models.Store
 		.find({"id": storeID})
-		.update({"subscribed":0},{$set:{"subscribed":1}})
+		.update({_id: storeID}, {$set:{subscribed:1}})
+		//.update({"subscribed":0},{$set:{"subscribed":1}})
 		.exec(afterSub);
 
-	console.log(allstores);
+	//console.log(allstores);
 
 	function afterSub(err){
 		res.send();

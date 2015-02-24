@@ -1,4 +1,4 @@
-var salewatch = require('../sales.json');
+//var salewatch = require('../sales.json');
 var models = require('../models'); 
 
 exports.view = function(req, res){
@@ -8,7 +8,7 @@ exports.view = function(req, res){
 		.exec(displaySales);
 
 	function displaySales(err, sales){
-		console.log(sales);
+		//console.log(sales);
 		res.render('salewatch', {'sales': sales});
 	}
 }
@@ -16,14 +16,17 @@ exports.view = function(req, res){
 exports.unwatchSale = function(req, res){
 	var saleID = req.params.id;
 	//console.log("saleID from routes: " + saleID);
-	var idNum = saleID.substr('sale'.length);
+	// Not being reached, nor printing
+	//var idNum = saleID.substr('sale'.length);
 
 	models.Sale
-		.find({"id": idNum})
-		.update({"watched":1},{$set:{"watched":0}})
+		.find({"_id": saleID})
+		.update({_id: saleID}, {$set:{watched:0}})
+		//.update({"watched":1},{$set:{"watched":0}})
 		.exec(afterUnwatch);
 
 	function afterUnwatch(err){
 		res.send();
 	}
 }
+	

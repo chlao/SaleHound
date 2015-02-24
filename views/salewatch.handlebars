@@ -66,20 +66,22 @@
 	<!-- Feed -->
 	{{#each sales}}
 	<!--<div class="sale" id="sale{{id}}">-->
-	<div class="sale" id="sale{{id}}">
+	<div class="sale" id="sale{{_id}}">
 		{{#if watched}}
-		<a href="#">
-			<div align="center" style="font-size:25px">
-				{{description}}
-			</div>
-			<div align="left">
-				<img src="images/stores/{{imageURL}}" class="img img-responsive" height="150" width="150">
-			</div>
-			<div align="right">
-				<!--<input type="button" name="unwatch" id="unwatch" value="Unwatch Sale" style="height:150px;width:150px;" class="btn btn-default">-->
-				<button class="butt" type="button">Unwatch Sale</button>
-			</div>
-		</a>
+		<div class="thumbnail">
+			<a href="#">
+				<div align="center" style="font-size:25px">
+					{{description}}
+				</div>
+				<div align="left">
+					<img src="images/stores/{{imageURL}}" class="img img-responsive" height="150" width="150">
+				</div>
+				<div align="right">
+					<!--<input type="button" name="unwatch" id="unwatch" value="Unwatch Sale" style="height:150px;width:150px;" class="btn btn-default">-->
+					<input type="button" name="watch" id="watch" value="Unwatch Sale" style="height:150px;width:150px;" class="btn btn-default">
+				</div>
+			</a>
+		</div>
 		{{/if}}
 	</div>
 	{{/each}}

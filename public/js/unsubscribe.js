@@ -6,7 +6,7 @@ function initializePage(){
 	$('.store a').click(function(e) {
 		e.preventDefault();
 		var storeID = $(this).closest('.store').attr('id');
-		console.log(storeID);
+		console.log(storeID + "unsubscribe");
 		var stores_div = $('#store' + storeID);
 
 		$.post('/mystores/'+storeID+'/unsubscribe', function(){

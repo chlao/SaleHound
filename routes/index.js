@@ -1,6 +1,6 @@
 //'use strict'
 
-var sales = require('../sales.json');
+//var sales = require('../sales.json');
 var models = require('../models'); 
 
 exports.view = function(req, res){
@@ -9,17 +9,19 @@ exports.view = function(req, res){
 		.exec(displaySales); 
 
 	function displaySales(err, sales){
-		console.log(sales);
+		//console.log(sales);
 		res.render('index', {'sales': sales});
 	}
 };
 
 exports.watch = function(req, res){
 	var saleID = req.params.id;
+	//console.log(saleID + " watching sale"); 
 
 	models.Sale
-		.find({"id": saleID})
-		.update({"watched":0},{$set:{"watched":1}})
+		.find({"_id": saleID})
+		.update({_id: saleID}, {$set:{watched:1}})
+		//.update({"watched":0},{$set:{"watched":1}})
 		.exec(afterWatch);
 
 	function afterWatch(err){

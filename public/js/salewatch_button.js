@@ -15,16 +15,20 @@ function initializePage(){
 		});
 		
 	});*/
-	$('.sale a').click(function(e) {
+
+	$('.sale input').click(function(e) {
 		e.preventDefault();
 		var saleID = $(this).closest('.sale').attr('id');
 		var idNum = saleID.substr('sale'.length);
 		var sales_div = $('#sale' + idNum);
-		//alert("Tap unwatch again to unwatch the sale.");
+
+		//console.log(idNum + " unwatchsale")
+		//alert("Tap unwatch again to unwatch the sale."); 		
 
 		//sales_div.find('.butt').click(function(e){
-			console.log("LKJHGFDSA");
-			$.post('/salewatch/'+saleID+'/unwatch', function() {
+			//console.log(saleID);
+
+			$.post('/salewatch/'+idNum+'/unwatch', function() {
 				window.location.href = '/salewatch';
 			});
 		//});
