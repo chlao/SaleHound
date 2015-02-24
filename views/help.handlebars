@@ -31,26 +31,35 @@
 
 </head>
 <body>
-	<div class="container">
-		<div id ="sticker" class="cssmenu">
-			<ul class="nav">
-				<li><a href="/"><span>Home</span></a></li>
-				<li><a href="/myStores"><span>My Stores</span></a></li>
-				<li><a href="/allStores"><span>All Stores</span></a></li>
-				<li><a href="/account"><span>Manage Account</span></a></li>
-				<li><a href="/saleWatch"><span>Sale Watch</span></a></li>
-				<li class="last active"><a href="/help"><span>Help</span></a></li>
-			</ul>
-		</div>
-
-		<div align="center">
-			<h1>Help</h1>
-		</div>
-
-		<!-- Horizontal Rule -->
-		<hr style="height:5px;border-color:black;background-color:black" />
-
-		Home page has all sales from Your Stores. Click on your Stores to find sales from a particular store. There will be a filter on this page. Click on Other Stores to find other stores to subscribe to. 
+	<div id= "sticker" class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+        <div class="container">
+            <div class= "navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                 </button>
+               <a class="navbar-brand" href="#">SaleHound</a>
+            </div>
+            <div class="navbar-collapse collapse"> 
+                <ul class="nav navbar-nav navbar-right"> 
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/myStores">My Stores</a></li>
+                    <li><a href="/allStores">All Stores</a></li>
+                    <li><a href="/account">Manage Account</a></li>
+                    <li><a href="/saleWatch">Sale Watch</a></li>   
+                    <li class="active"><a href="/help">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+    	<p>
+			Home page has all sales from Your Stores. Click on your Stores to find sales from a particular store. There will be a filter on this page. Click on Other Stores to find other stores to subscribe to.
+		</p>
 	</div>
 </body>
 </html>
