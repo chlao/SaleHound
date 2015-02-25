@@ -1,100 +1,199 @@
 {
 	"stores": [
 		{
-			//"id": "1",
 			"name": "Best Buy",
 			"imageURL": "BestBuy.png",
-			"subscribed": 0			
+			"subscribed": 1,
+			"sales": [
+				{
+					"description": "40% off Lenovo Laptops",
+					"watched": 0
+				}
+			]		
 		},
 		{
-			//"id": "2",
 			"name": "Jamba Juice",
 			"imageURL": "JambaJuice.jpg",
-			"subscribed": 0					
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "",
+					"watched": 0
+				}
+			]				
 		},
 		{
-			//"id": "3",
 			"name": "Burger King",
 			"imageURL": "BurgerKing.png",
-			"subscribed": 0		
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "",
+					"watched": 0
+				}
+			]		
 		},
 		{
-			//"id": "4",
 			"name": "Abercrombie & Fitch",
 			"imageURL": "Abercrombie-Fitch.jpg",
-			"subscribed": 0		
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "",
+					"watched": 0
+				}
+			]		
 		},
 		{
-			//"id": "5",
 			"name": "sephora",
 			"imageURL": "sephora.png",
-			"subscribed": 0		
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "",
+					"watched": 0
+				}
+			]		
 		},
 		{
-			//"id": "6",
 			"name": "The North Face",
 			"imageURL": "TheNorthFace.png",
-			"subscribed": 0		
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "",
+					"watched": 0
+				}
+			]	
 		},
 		{
-			//"id": "7",
 			"name": "Apple",
 			"imageURL": "Apple.png",
-			"subscribed": 0		
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "",
+					"watched": 0
+				}
+			]	
 		},
 		{
-			//"id": "8",
 			"name": "Forever 21",
 			"imageURL": "forever21.png",
-			"subscribed": 0		
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "",
+					"watched": 0
+				}
+			]		
 		},
 		{
-			//"id": "9",
 			"name": "Target",
 			"imageURL": "Target.png",
-			"subscribed": 0			
+			"subscribed": 0, 	
+			"sales": [
+				{
+					"description": "30% or more on Boots",
+					"watched": 0
+				},
+				{
+					"description": "20% off Fragrances",
+					"watched": 1
+				}
+			]		
 		},
 		{
-			//"id": "10",
 			"name": "Amazon",
 			"imageURL": "Amazon.jpg",
-			"subscribed": 0					
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "",
+					"watched": 0
+				}
+			]					
 		},
 		{
-			//"id": "11",
 			"name": "American Eagle Outfitters",
 			"imageURL": "AmericanEagleOutfitters.png",
-			"subscribed": 0		
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "",
+					"watched": 0
+				}
+			]	
 		},
 		{
-			//"id": "12",
 			"name": "Cold Stone Creamery",
 			"imageURL": "ColdStone.jpg",
-			"subscribed": 0		
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "",
+					"watched": 0
+				}
+			]	
 		},
 		{
-			//"id": "13",
 			"name": "H&M",
 			"imageURL": "H&M.jpg",
-			"subscribed": 0		
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "",
+					"watched": 0
+				}
+			]	
 		},
 		{
-			//"id": "14",
 			"name": "HP",
 			"imageURL": "HP.png",
-			"subscribed": 0		
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "",
+					"watched": 0
+				}
+			]		
 		},
 		{
-			//"id": "15",
 			"name": "Macy's",
 			"imageURL": "Macys.jpg",
-			"subscribed": 1		
+			"subscribed": 1,
+			"sales": [
+				{
+					"description": "Free Tote with $45 Purchase",
+					"watched": 1
+				}
+			]		
 		},
 		{
-			//"id": "16",
 			"name": "Starbucks",
 			"imageURL": "starbucks.jpg",
-			"subscribed": 0		
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "",
+					"watched": 0
+				}
+			]		
+		},
+		{
+			"name": "Express",
+			"imageURL": "Express.jpg",
+			"subscribed": 0,
+			"sales": [
+				{
+					"description": "25% off all sweaters", 
+					"watched": 0
+				},
+				{
+					"description": "6000% off all suits", 
+					"watched": 1
+				}
+			]	
 		}
 	]
 }

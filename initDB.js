@@ -24,6 +24,7 @@ mongoose.connect(database_uri);
 
 // Step 1: load the JSON data
 //var user_json = require('./user.json');
+/*
 var sales_json = require('./sales.json').sales;
 
 // Step 2: Remove all existing documents
@@ -56,6 +57,7 @@ function onceClear(err) {
     });
   }
 }
+*/
 
 var mystores_json = require('./allstores.json').stores; 
 

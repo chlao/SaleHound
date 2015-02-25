@@ -70,7 +70,7 @@
 
 	<!-- Feed -->
 	<div class="container">
-		{{#each sales}}
+	{{#each sales}}
 		<div class="sale" id="sale{{_id}}">
 			<a href="#" class="thumbnail">
 				<div align="center" style="font-size:25px">
@@ -80,11 +80,12 @@
 					<img src="images/stores/{{imageURL}}" class="img img-responsive" height="150" width="150">
 				</div>
 				<div align="right">
-					<input type="button" name="watch" id="watch" value="Watch Sale" style="height:150px;width:150px;" class="btn btn-default">
+					<input type="button" name="watch" id="watch" value="Watch Sale" 
+					style="height:150px;width:150px;" class="btn btn-default">
 				</div>
 			</a>
 		</div>
-		{{/each}}
+	{{/each}}
 	</div>
 </body>
 </html>
