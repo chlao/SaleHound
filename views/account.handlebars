@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>Create or Sign in to Your Account!</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="js/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="js/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+	<script src="js/bootstrap-3.3.2-dist/js/bootstrap.js"> </script>
+
+	<!-- JQuery (necessary for Bootstrap's Javascript plugins)-->
+	<script type="text/javascript" src= "https://code.jquery.com/jquery.js"></script>
+
+	<!-- Javascript file for the navigation bar-->
+	<script src="js/header.js"></script>
+
+	<!--- Link to external style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link href="css/thumbnail-gallery.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div id= "sticker" class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+        <div class="container">
+            <div class= "navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                 </button>
+               <a class="navbar-brand" href="#">SaleHound</a>
+            </div>
+            <div class="navbar-collapse collapse"> 
+                <ul class="nav navbar-nav navbar-right"> 
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/myStores">My Stores</a></li>
+                    <li><a href="/allStores">All Stores</a></li>
+                    <li class="active"><a href="/account">Manage Account</a></li>
+                    <li><a href="/saleWatch">Sale Watch</a></li>   
+                    <li><a href="/help">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	<!-- Sign In Banner -->
+	<div class="container">
+		<div align="center" >
+			<h1>Sign In to SaleHound!</h1>
+		<form>
+				<div class="form-group">
+				User Name:<br>
+				<input type="text" name="username" class="form-control">
+				<br><br>
+				Password:<br>
+				<input type="password" name="password" class="form-control">
+				<br><br>
+				<b>Forgot Password?</b><br>Enter Your Email Address:<br>
+				<input type="text" name="forgot" class="form-control">
+				<br><br>
+				<input type="submit" value="Submit" class="btn btn-default">
+			</div>
+		</form>
+		</div>
+
+
+		<!-- Sign Up Banner -->
+		<div align="center">
+			<h1>Sign Up for a New Account!</h1>
+		<form role="form">
+			<div class="form-group">
+			<label for="user">User Name:</label>
+			<input type="text" name="username" class="form-control" method="formpost">
+			<br><br>
+			<label for="pass">Password:</label>
+			<input type="password" name="password" class="form-control"method="formpost">
+			<br><br>
+			<label for="email">Email Address:</label>
+			<input type="text" name="email" class="form-control" method="formpost">
+			<br><br>
+			</div>
+			<input type="submit" value="Create" class="btn btn-default" id="newAccountSubmit">
+		</form>
+		</div>
+	</div> <!-- End of Bootstrap container -->
+</body>

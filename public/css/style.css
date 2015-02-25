@@ -1,0 +1,50 @@
+p {
+	text-align:center;
+	font-size:20px;
+	line-height:100px;
+}
+
+.block{
+    width: 275px;
+    height: 275px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px; 
+}
+
+@font-face{
+	font-family: RNSBarutaBlack; 
+	src: url(../fonts/RNS-B.ttf);
+}
+
+@font-face{
+	font-family: CenturyGothic; 
+	src: url(../fonts/Century-Gothic.ttf)
+}
+
+h1{
+	font-family: RNSBarutaBlack; 
+}
+
+h3{
+	font-family: CenturyGothic; 
+}
+
+
+.sale{
+	/*height: 150px;*/
+	font-family: CenturyGothic; 
+	/*
+	width:1000px;
+	max-width: 1000px; 
+	height: 150px;
+	max-height: 150px;
+	display: inline-block;
+	*/
+}
+
+.sale div input{
+	height:50px;
+	max-height: 50px;
+}
