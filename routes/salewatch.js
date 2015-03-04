@@ -28,18 +28,19 @@ exports.view = function(req, res){
 
 exports.unwatchSale = function(req, res){
 	var saleID = req.params.id;
-	//console.log("saleID from routes: " + saleID);
-	// Not being reached, nor printing
-	//var idNum = saleID.substr('sale'.length);
+	//console.log(saleID + " watching sale"); 
+	// Have added second layer of stores 
+	// Need to have store id also 
+	console.log(saleID);
 
-	models.Store
-		.find({"_id": saleID})
-		.update({_id: saleID}, {$set:{watched:0}})
-		//.update({"watched":1},{$set:{"watched":0}})
-		.exec(afterUnwatch);
+	var MyObjectId = mongoose.Types.ObjectId;
+	objectID = new MyObjectId(saleID);
 
-	function afterUnwatch(err){
-		res.send();
-	}
+	 models.Store
+	 	.update({"sales._id": saleID}, {$set : {"sales.$.watched" : 0}})
+	 	.exec(function(err, result){
+	 		res.send();
+	 	//	console.log("result", result);
+	 })
 }
 	

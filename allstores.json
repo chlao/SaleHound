@@ -6,7 +6,13 @@
 			"subscribed": 1,
 			"sales": [
 				{
+					"imageURL": "BestBuy.png",
 					"description": "40% off Lenovo Laptops",
+					"watched": 0
+				},
+				{
+					"imageURL": "BestBuy.png",
+					"description": "10% off iPhones",
 					"watched": 0
 				}
 			]		
@@ -17,7 +23,8 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"description": "",
+					"imageURL": "JambaJuice.jpg",
+					"description": "No Sales",
 					"watched": 0
 				}
 			]				
@@ -28,7 +35,8 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"description": "",
+					"imageURL": "BurgerKing.png",
+					"description": "No Sales",
 					"watched": 0
 				}
 			]		
@@ -39,7 +47,8 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"description": "",
+					"imageURL": "Abercrombie-Fitch.jpg",
+					"description": "No Sales",
 					"watched": 0
 				}
 			]		
@@ -50,7 +59,8 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"description": "",
+					"imageURL": "sephora.png",
+					"description": "No Sales",
 					"watched": 0
 				}
 			]		
@@ -61,7 +71,8 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"description": "",
+					"imageURL": "TheNorthFace.png",
+					"description": "No Sales",
 					"watched": 0
 				}
 			]	
@@ -72,7 +83,8 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"description": "",
+					"imageURL": "Apple.png",
+					"description": "No Sales",
 					"watched": 0
 				}
 			]	
@@ -83,7 +95,8 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"description": "",
+					"imageURL": "forever21.png",
+					"description": "No Sales",
 					"watched": 0
 				}
 			]		
@@ -94,10 +107,12 @@
 			"subscribed": 0, 	
 			"sales": [
 				{
+					"imageURL": "Target.png",
 					"description": "30% or more on Boots",
 					"watched": 0
 				},
 				{
+					"imageURL": "Target.png",
 					"description": "20% off Fragrances",
 					"watched": 1
 				}
@@ -109,7 +124,8 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"description": "",
+					"imageURL": "Amazon.jpg",
+					"description": "No Sales",
 					"watched": 0
 				}
 			]					
@@ -120,7 +136,8 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"description": "",
+					"imageURL": "AmericanEagleOutfitters.png",
+					"description": "No Sales",
 					"watched": 0
 				}
 			]	
@@ -131,7 +148,8 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"description": "",
+					"imageURL": "ColdStone.jpg",
+					"description": "No Sales",
 					"watched": 0
 				}
 			]	
@@ -142,7 +160,8 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"description": "",
+					"imageURL": "H&M.jpg",
+					"description": "No Sales",
 					"watched": 0
 				}
 			]	
@@ -153,7 +172,8 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"description": "",
+					"imageURL": "HP.png",
+					"description": "No Sales",
 					"watched": 0
 				}
 			]		
@@ -164,6 +184,7 @@
 			"subscribed": 1,
 			"sales": [
 				{
+					"imageURL": "Macys.jpg",
 					"description": "Free Tote with $45 Purchase",
 					"watched": 1
 				}
@@ -175,7 +196,8 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"description": "",
+					"imageURL": "starbucks.jpg",
+					"description": "No Sales",
 					"watched": 0
 				}
 			]		
@@ -186,10 +208,12 @@
 			"subscribed": 0,
 			"sales": [
 				{
+					"imageURL": "Express.jpg",
 					"description": "25% off all sweaters", 
 					"watched": 0
 				},
 				{
+					"imageURL": "Express.jpg",
 					"description": "6000% off all suits", 
 					"watched": 1
 				}

@@ -14,6 +14,7 @@ var StoreSchema = new Mongoose.Schema({
 	"imageURL": String,
 	"subscribed": Boolean,
 	"sales": [{
+		"imageURL": String,
 		"description": String, 
 		"watched": Boolean
 	}]

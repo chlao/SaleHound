@@ -1,7 +1,9 @@
 //'use strict'
-
+mongoose = require('mongoose');
 //var sales = require('../sales.json');
-var models = require('../models'); 
+var models = require('../models');
+var sales = [];
+var hodor = [];
 
 exports.view = function(req, res){
 	models.Store
@@ -11,8 +13,8 @@ exports.view = function(req, res){
 	function displaySales(err, stores){
 		//console.log(stores);
 		//console.log(stores[0]["subscribed"]); 
-
-		var sales = []; 
+		hodor = stores;
+		sales = []; 
 		var k = 0; 
 
 		for (i = 0; i < stores.length; i++){
@@ -26,7 +28,7 @@ exports.view = function(req, res){
 		}
 
 		for (i = 0; i < sales.length; i++){
-			console.log(sales[i]); 
+			//console.log(sales[i]); 
 		}
 		//console.log(stores["sales"]); 
 		res.render('index', {"sales": sales});
@@ -41,14 +43,47 @@ exports.watch = function(req, res){
 	//console.log(saleID + " watching sale"); 
 	// Have added second layer of stores 
 	// Need to have store id also 
-	console.log(saleID); 
-	models.Store
-		.find({"_id": saleID})
-		.update({_id: saleID}, {$set:{watched:1}})
-		//.update({"watched":0},{$set:{"watched":1}})
-		.exec(afterWatch);
+	console.log(saleID);
+
+	var MyObjectId = mongoose.Types.ObjectId;
+	objectID = new MyObjectId(saleID);
+
+	 models.Store.update({"sales._id": saleID}, {
+	 	$set : {"sales.$.watched" : 1}
+	 }).exec(function(err, result){
+	 	console.log("result", result);
+	// 	models.Store.findByIdAndUpdate(result[0]._id, {$set : {"sales.watched" : 1}}).exec(function(err, result2){
+	// 		console.log("update result", result2);
+	 })
+	// })
+	//.update(/*{"result[0].sales[0].watched":0},*/{$set:{"result[0].sales[0].watched":1}})
+	//.exec(afterWatch);
+
+	//models.Store
+		//.find({"sales._id": objectID})
+		//.find({'sales.watched': 0})
+		//.update({"_id": saleID}, {$set:{watched:1}})
+		//.update({'subscribed':1},{$set:{'subscribed':0}})
+		//.update({$set:{'watched':1}})
+		//.update({"_id": saleID},{$set: {"_id.$.watched": 1}})
+		//.exec(afterWatch);
 
 	function afterWatch(err){
+		/*var k = 0; 
+
+		for (i = 0; i < hodor.length; i++){
+			if (hodor[i]["subscribed"]){
+				for (j = 0; j < hodor[i]["sales"].length; j++){
+					//console.log(stores[i]["sales"][j]);
+					sales[k] = hodor[i]["sales"][j]; 
+					k++; 
+				}
+			}
+		}
+		for (l = 0; l < sales.length; l++){
+			console.log(sales[l]); 
+			//console.log("HERE");
+		}*/
 		res.send();
 	}
 }
