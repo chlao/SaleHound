@@ -27,7 +27,7 @@ function initializePage(){
 	})
 
 	$('version_a_unwatch').click(function(){
-		console.log("ready to clicking initializePage"); 
+				console.log("ready to clicking initializePage"); 
 		woopra.track("a_version_unwatch_click"); 
 	})
 
