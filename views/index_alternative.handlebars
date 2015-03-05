@@ -8,16 +8,16 @@
 	<meta charset="utf-8">
 	<!-- initial-scale=1 sets the intial zoom level when the page is first loaded by the browser-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Sale Watch</title>
+	<title>My Home Page</title>
 
 	<!--Javascript Imports -->
 	<script src="/js/jquery-1.11.0.js"> </script>
 	<script src="/js/bootstrap-3.3.2-dist/js/bootstrap.js"> </script>
 
 	<!-- JQuery (necessary for Bootstrap's Javascript plugins)-->
-	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src= "https://code.jquery.com/jquery.js"></script>
 		<!-- Link to external javascript --> 
-	
+
 	<script src="/js/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
 
 	<script src="/js/jquery-sticky.js"></script>
@@ -31,13 +31,13 @@
 	<link href="/js/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/js/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
-	<script src="js/header.js"></script>
-	<script src="js/salewatch_button.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/watch_sale.js"></script>
 
 	<!--- Link to external style sheet -->
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/css/header.css">
-	<link href="css/thumbnail-gallery.css" rel="stylesheet">
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
 
 	<script src="/js/introHCI.js"></script>
     {{> tracking_code_script}}
@@ -58,39 +58,37 @@
             </div>
             <div class="navbar-collapse collapse"> 
                 <ul class="nav navbar-nav navbar-right"> 
-                    <li><a href="/">Home</a></li>
+                    <li class="active"><a href="/">Home</a></li>
                     <li><a href="/myStores">My Stores</a></li>
                     <li><a href="/allStores">All Stores</a></li>
                     <li><a href="/account">Manage Account</a></li>
-                    <li class="active"><a href="/saleWatch">Sale Watch</a></li>   
+                    <li><a href="/salewatch_alternative">Sale Watch</a></li>   
                     <li><a href="/help">Help</a></li>
                 </ul>
             </div>
+
+
         </div>
     </div>
 
-    <div class="container">
 	<!-- Feed -->
-	{{#each sales}}
-		<!--<div class="sale" id="sale{{id}}">-->
-		<div class="sale" id="sale{{_id}}">
-			{{#if watched}}
-				<a href="#" class="thumbnail">
-					<div align="center" style="font-size:25px">
-						{{description}}
-					</div>
-					<div align="left">
-						<img src="images/stores/{{imageURL}}" class="img img-responsive" height="150" width="150">
-					</div>
-					<div align="right">
-						<input type="button" name="watch" id="watch" value="Unwatch Sale" 
-						style="height:150px;width:150px;" class="btn btn-default version_a_unwatch">
-					</div>
-				</a>
-			{{/if}}
-		</div>
-		{{/each}}
-	</div>
+
+{{#each sales}}
+    <div class="sale col-lg-3 col-md-4 col-xs-6 thumb store" id="sale{{_id}}">
+        <a href="#" class="thumbnail ">
+            <img src = "/images/stores/{{imageURL}}" class="img-rounded img-responsive" style="height:150px;width:150px;">		
+            <div align="center" class=>
+					{{store}}
+				</div>			
+				<div align="center" class=>
+					{{description}}
+				</div>
+				<div align="center">
+				<input type="button" name="watch" id="watch" value="Watch Sale" style="height:150px;width:150px;" class="btn btn-default version_b_watch">
+				</div>
+        </a>
+    </div>
+{{/each}}
 
 </body>
 </html>

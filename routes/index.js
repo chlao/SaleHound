@@ -31,10 +31,16 @@ exports.view = function(req, res){
 			//console.log(sales[i]); 
 		}
 		//console.log(stores["sales"]); 
-		res.render('index', {"sales": sales});
-		///res.render('index', sales); 
-		//res.render('index', {'stores': {"sales": sales}});
-		//res.render('index', {'sales': sales});
+
+		var random_num = Math.random();
+
+  		if(random_num > 0.5){
+    		res.render("index", {"sales": sales});
+  		}
+  		else{
+    		res.render("index_alternative", {"sales": sales}); 
+  		}
+		//res.render('index', {"sales": sales});
 	}
 };
 
