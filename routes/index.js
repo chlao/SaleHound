@@ -5,6 +5,7 @@ var models = require('../models');
 var sales = [];
 var hodor = [];
 
+
 exports.view = function(req, res){
 	models.Store
 		.find()
