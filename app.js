@@ -62,6 +62,8 @@ app.get('/account', account.view);
 app.get('/mystores', mystores.view); 
 app.get('/allstores', allstores.view);
 app.get('/salewatch', salewatch.view);
+app.get('/salewatch_alternative', salewatch.view);
+
 //app.post('/salewatch', salewatch.unwatchSale); 
 app.post('/:id/watch', index.watch);
 app.post('/salewatch/:id/unwatch', salewatch.unwatchSale);
