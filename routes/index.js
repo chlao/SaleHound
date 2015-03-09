@@ -27,7 +27,7 @@ exports.view = function(req, res){
 				}
 			}
 		}
-
+/*
 		for (i = 0; i < sales.length; i++){
 			//console.log(sales[i]); 
 		}
@@ -40,8 +40,9 @@ exports.view = function(req, res){
   		}
   		else{
     		res.render("index_alternative", {"sales": sales}); 
-  		}
-		//res.render('index', {"sales": sales});
+  		}*/
+
+		res.render('index', {"sales": sales});
 	}
 };
 
