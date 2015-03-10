@@ -42,7 +42,7 @@
     {{> tracking_code_script}}-->
 
     <script src="js/salewatch_button.js"></script>
-
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -55,18 +55,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                  </button>
-               <a class="navbar-brand" href="#">SaleHound</a>
+               <a class="navbar-brand" href="/saleWatch">Sale Watch</a>
             </div>
             <div class="navbar-collapse collapse"> 
-                <ul class="nav navbar-nav navbar-right"> 
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/myStores">My Stores</a></li>
-                    <li><a href="/allStores">All Stores</a></li>
-                    <li><a href="/account">Manage Account</a></li>
-                    <li class="active"><a href="/saleWatch">Sale Watch</a></li>   
-                    <li><a href="/help">Help</a></li>
+                <ul class="nav navbar-nav nav-pills"> 
+                    <li ><a href="/"><i class="fa fa-home fa-fw fa-2x"></i></a></li>
+                    <li><a href="/myStores"><i class="fa fa-star fa-2x"></i></a></li>
+                    <li><a href="/allStores">      	<i class="fa fa-shopping-cart fa-2x"></i></a></li>
+                    <li class="active"><a href="/saleWatch"><i class="fa fa-binoculars fa-2x"></i></a></li>
+                     <li><a href="/account"><i class="fa fa-cog fa-2x"></i></a></li>
+
                 </ul>
             </div>
+
+
         </div>
     </div>
 
@@ -78,10 +80,11 @@
 			{{#if watched}}
 				<a href="#" class="thumbnail">
 					<div align="center" style="font-size:25px">
+						{{storeName}}<br>
 						{{description}}
 					</div>
 					<div align="left">
-						<img src="images/stores/{{imageURL}}" class="img img-responsive" height="150" width="150">
+						<img src="images/items/{{imageURL}}" class="img img-responsive" height="150" width="150">
 					</div>
 					<div align="right">
 						<input type="button" name="watch" id="watch" value="Unwatch Sale" 

@@ -16,7 +16,9 @@ var StoreSchema = new Mongoose.Schema({
 	"sales": [{
 		"imageURL": String,
 		"description": String, 
-		"watched": Boolean
+		"watched": Boolean,
+		"expires": String,
+		"storeName": String
 	}]
 }); 
 

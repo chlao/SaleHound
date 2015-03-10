@@ -6,14 +6,18 @@
 			"subscribed": 1,
 			"sales": [
 				{
-					"imageURL": "BestBuy.png",
+					"imageURL": "Laptop.jpg",
 					"description": "40% off Lenovo Laptops",
-					"watched": 0
+					"watched": 0,
+					"expires": "3/10/15",
+					"storeName": "Best Buy"
 				},
 				{
-					"imageURL": "BestBuy.png",
+					"imageURL": "iPhone.jpg",
 					"description": "10% off iPhones",
-					"watched": 0
+					"watched": 0,
+					"expires": "3/14/15",
+					"storeName": "Best Buy"
 				}
 			]		
 		},
@@ -24,8 +28,10 @@
 			"sales": [
 				{
 					"imageURL": "JambaJuice.jpg",
-					"description": "No Sales",
-					"watched": 0
+					"description": "No Current Sales",
+					"watched": 0,
+					"expires": "",
+					"storeName": "Jamba Juice"
 				}
 			]				
 		},
@@ -35,9 +41,11 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"imageURL": "BurgerKing.png",
-					"description": "No Sales",
-					"watched": 0
+					"imageURL": "whopper.jpg",
+					"description": "2 Whoppers for $3",
+					"watched": 0,
+					"expires": "4/10/15",
+					"storeName": "Burger King"
 				}
 			]		
 		},
@@ -47,9 +55,11 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"imageURL": "Abercrombie-Fitch.jpg",
-					"description": "No Sales",
-					"watched": 0
+					"imageURL": "Sweater1.png",
+					"description": "15% off Sweaters",
+					"watched": 0,
+					"expires": "3/19/15",
+					"storeName": "Abercrombie & Fitch"
 				}
 			]		
 		},
@@ -59,9 +69,11 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"imageURL": "sephora.png",
-					"description": "No Sales",
-					"watched": 0
+					"imageURL": "sephoraGiftCard.jpg",
+					"description": "$25 Gift Card with $100 Purchase",
+					"watched": 0,
+					"expires": "4/1/15",
+					"storeName": "Sephora"
 				}
 			]		
 		},
@@ -71,9 +83,11 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"imageURL": "TheNorthFace.png",
-					"description": "No Sales",
-					"watched": 0
+					"imageURL": "northFaceJacket.jpg",
+					"description": "$25 off Jackets",
+					"watched": 0,
+					"expires": "7/10/15",
+					"storeName": "The North Face"
 				}
 			]	
 		},
@@ -84,8 +98,10 @@
 			"sales": [
 				{
 					"imageURL": "Apple.png",
-					"description": "No Sales",
-					"watched": 0
+					"description": "No Sales EVER",
+					"watched": 0,
+					"expires": "2/31/34",
+					"storeName": "Apple"
 				}
 			]	
 		},
@@ -95,9 +111,11 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"imageURL": "forever21.png",
-					"description": "No Sales",
-					"watched": 0
+					"imageURL": "dress.jpg",
+					"description": "20% off Dresses",
+					"watched": 0,
+					"expires": "4/8/15",
+					"storeName": "Forever 21"
 				}
 			]		
 		},
@@ -107,14 +125,18 @@
 			"subscribed": 0, 	
 			"sales": [
 				{
-					"imageURL": "Target.png",
-					"description": "30% or more on Boots",
-					"watched": 0
+					"imageURL": "Target boots.jpg",
+					"description": "30% more on Boots",
+					"watched": 0,
+					"expires": "6/15/15",
+					"storeName": "Target"
 				},
 				{
-					"imageURL": "Target.png",
+					"imageURL": "Target Fragrances.jpg",
 					"description": "20% off Fragrances",
-					"watched": 1
+					"watched": 1,
+					"expires": "10/10/15",
+					"storeName": "Target"
 				}
 			]		
 		},
@@ -125,8 +147,10 @@
 			"sales": [
 				{
 					"imageURL": "Amazon.jpg",
-					"description": "No Sales",
-					"watched": 0
+					"description": "No Current Sales",
+					"watched": 0,
+					"expires": "",
+					"storeName": "Amazon"
 				}
 			]					
 		},
@@ -136,9 +160,11 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"imageURL": "AmericanEagleOutfitters.png",
-					"description": "No Sales",
-					"watched": 0
+					"imageURL": "v-neck.jpg",
+					"description": "50% V-Necks",
+					"watched": 0,
+					"expires": "7/4/15",
+					"storeName": "American Eagle"
 				}
 			]	
 		},
@@ -148,9 +174,11 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"imageURL": "ColdStone.jpg",
-					"description": "No Sales",
-					"watched": 0
+					"imageURL": "coldstone.jpg",
+					"description": "3rd Mix-in Free!",
+					"watched": 0,
+					"expires": "10/31/15",
+					"storeName": "Coldstone Creamery"
 				}
 			]	
 		},
@@ -160,9 +188,11 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"imageURL": "H&M.jpg",
-					"description": "No Sales",
-					"watched": 0
+					"imageURL": "socks.jpg",
+					"description": "$10 off $50 purchase of Socks",
+					"watched": 0,
+					"expires": "5/5/15",
+					"storeName": "H&M"
 				}
 			]	
 		},
@@ -172,9 +202,11 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"imageURL": "HP.png",
-					"description": "No Sales",
-					"watched": 0
+					"imageURL": "toner.png",
+					"description": "25% off HP-BGE6Jh Toner",
+					"watched": 0,
+					"expires": "11/11/15",
+					"storeName": "HP"
 				}
 			]		
 		},
@@ -184,9 +216,11 @@
 			"subscribed": 1,
 			"sales": [
 				{
-					"imageURL": "Macys.jpg",
+					"imageURL": "MacyTote.jpg",
 					"description": "Free Tote with $45 Purchase",
-					"watched": 1
+					"watched": 1,
+					"expires": "10/14/15",
+					"storeName": "Macy's"
 				}
 			]		
 		},
@@ -197,8 +231,10 @@
 			"sales": [
 				{
 					"imageURL": "starbucks.jpg",
-					"description": "No Sales",
-					"watched": 0
+					"description": "No Current Sales",
+					"watched": 0,
+					"expires": "",
+					"storeName": "Starbucks"
 				}
 			]		
 		},
@@ -208,14 +244,18 @@
 			"subscribed": 0,
 			"sales": [
 				{
-					"imageURL": "Express.jpg",
+					"imageURL": "Sweater2.jpg",
 					"description": "25% off all sweaters", 
-					"watched": 0
+					"watched": 0,
+					"expires": "12/31/15",
+					"storeName": "Express"
 				},
 				{
-					"imageURL": "Express.jpg",
+					"imageURL": "suit.jpg",
 					"description": "6000% off all suits", 
-					"watched": 1
+					"watched": 1,
+					"expires": "3/20/15",
+					"storeName": "Express"
 				}
 			]	
 		}

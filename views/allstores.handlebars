@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <!-- initial-scale=1 sets the intial zoom level when the page is first loaded by the browser-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Browse All Stores</title>
+    <title>All Stores</title>
 
     <!--Javascript Imports -->
     <script src="/js/jquery-1.11.0.js"> </script>
@@ -36,7 +36,8 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link href="css/thumbnail-gallery.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="css/overlay.css" rel="stylesheet">
 </head>
 
 
@@ -50,31 +51,40 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                  </button>
-               <a class="navbar-brand" href="#">SaleHound</a>
+               <a class="navbar-brand" href="/allStores">All Stores</a>
             </div>
             <div class="navbar-collapse collapse"> 
-                <ul class="nav navbar-nav navbar-right"> 
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/myStores">My Stores</a></li>
-                    <li class="active"><a href="/allStores">All Stores</a></li>
-                    <li><a href="/account">Manage Account</a></li>
-                    <li><a href="/saleWatch">Sale Watch</a></li>               
-                    <li><a href="/help">Help</a></li>
+                <ul class="nav navbar-nav nav-pills"> 
+                    <li ><a href="/"><i class="fa fa-home fa-fw fa-2x"></i></a></li>
+                    <li><a href="/myStores"><i class="fa fa-star fa-2x"></i></a></li>
+                    <li class="active"><a href="/allStores">       <i class="fa fa-shopping-cart fa-2x"></i></a></li>
+                    <li><a href="/saleWatch"><i class="fa fa-binoculars fa-2x"></i></a></li>
+                     <li><a href="/account"><i class="fa fa-cog fa-2x"></i></a></li>
+
                 </ul>
             </div>
+
+
         </div>
     </div>
+
 <!-- STORES -->
 
 <!-- Bootstrap grid system-->
 
 {{#each stores}}
     <div class="col-lg-3 col-md-4 col-xs-6 thumb store" id="{{_id}}">
-        <a href="#" class="thumbnail">
-            <img src = "/images/stores/{{imageURL}}" class="img-rounded img-responsive"
+            <div id="container">
+
+        <a  class="thumbnail">
+            <img src = "/images/stores/{{imageURL}}" class="img-rounded img-responsive image"
             <input type="button" name="subscribe" id="subscribe" value="Subscribe to Store" 
             style="height:150px;width:150px;" class="btn btn-default">
+            <p id="text">
+                <i class="fa fa-plus"></i>
+            </p>
         </a>
+    </div>
     </div>
 {{/each}}
 
