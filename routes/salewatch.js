@@ -3,30 +3,44 @@ var models = require('../models');
 
 exports.view = function(req, res){
 	//res.render('salewatch', salewatch);
-	models.Sale
+	models.Store
 		.find()
 		.exec(displaySales);
 
-	function displaySales(err, sales){
+
+
+	function displaySales(err, stores){
 		//console.log(sales);
+
+		var sales = []; 
+		var k = 0; 
+
+		for (i = 0; i < stores.length; i++){
+			for (j = 0; j < stores[i]["sales"].length; j++){
+				sales[k] = stores[i]["sales"][j]; 
+				k++
+			}
+		}
+
 		res.render('salewatch', {'sales': sales});
 	}
 }
 
 exports.unwatchSale = function(req, res){
 	var saleID = req.params.id;
-	//console.log("saleID from routes: " + saleID);
-	// Not being reached, nor printing
-	//var idNum = saleID.substr('sale'.length);
+	//console.log(saleID + " watching sale"); 
+	// Have added second layer of stores 
+	// Need to have store id also 
+	console.log(saleID);
 
-	models.Sale
-		.find({"_id": saleID})
-		.update({_id: saleID}, {$set:{watched:0}})
-		//.update({"watched":1},{$set:{"watched":0}})
-		.exec(afterUnwatch);
+	var MyObjectId = mongoose.Types.ObjectId;
+	objectID = new MyObjectId(saleID);
 
-	function afterUnwatch(err){
-		res.send();
-	}
+	 models.Store
+	 	.update({"sales._id": saleID}, {$set : {"sales.$.watched" : 0}})
+	 	.exec(function(err, result){
+	 		res.send();
+	 	//	console.log("result", result);
+	 })
 }
 	

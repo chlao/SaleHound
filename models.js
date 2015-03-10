@@ -1,7 +1,6 @@
 var Mongoose = require('mongoose');
-
+/*
 var SaleSchema = new Mongoose.Schema({
-	"id": Number,
 	"store": String,
 	"description": String, 
 	"imageURL": String,
@@ -9,12 +8,18 @@ var SaleSchema = new Mongoose.Schema({
 });
 
 exports.Sale = Mongoose.model('Sale', SaleSchema); 
-
+*/
 var StoreSchema = new Mongoose.Schema({
-	"id": Number,
 	"name": String, 
 	"imageURL": String,
-	"subscribed": Boolean
+	"subscribed": Boolean,
+	"sales": [{
+		"imageURL": String,
+		"description": String, 
+		"watched": Boolean,
+		"expires": String,
+		"storeName": String
+	}]
 }); 
 
 exports.Store = Mongoose.model('Store', StoreSchema);

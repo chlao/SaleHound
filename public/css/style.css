@@ -48,3 +48,12 @@ h3{
 	height:50px;
 	max-height: 50px;
 }
+body {background-color: #EBFFFF;}
+
+.linkdescription {font-size: 25px;
+	color:#666666;
+}
+
+a:link{text-decoration:none;}
+
+.navtext{font-family: RNSBarutaBlack; }

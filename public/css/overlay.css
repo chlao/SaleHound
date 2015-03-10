@@ -1,0 +1,26 @@
+#container 
+{
+position relative;
+}
+
+
+#image
+{position:absolute
+left:0;
+top:0;
+}
+
+
+#text
+{z-index:100;
+position:absolute;
+color:#009933;
+font-size:24px;
+top:-35px;}
+
+#text2
+{z-index:100;
+position:absolute;
+color:#FF0000;
+font-size:24px;
+top:-35px;}
