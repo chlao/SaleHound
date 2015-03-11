@@ -11,7 +11,7 @@
 	<title>Sale Watch</title>
 
 	<!--Javascript Imports -->
-	<script src="/js/jquery-1.11.0.js"> </script>
+	<script src="/js/jquery-2.1.4.min.js"> </script>
 	<script src="/js/bootstrap-3.3.2-dist/js/bootstrap.js"> </script>
 
 	<!-- JQuery (necessary for Bootstrap's Javascript plugins)-->
@@ -61,10 +61,15 @@
                 <ul class="nav navbar-nav nav-pills"> 
                     <li ><a href="/"><i class="fa fa-home fa-fw fa-2x"></i></a></li>
                     <li><a href="/myStores"><i class="fa fa-star fa-2x"></i></a></li>
-                    <li><a href="/allStores">      	<i class="fa fa-shopping-cart fa-2x"></i></a></li>
+                    <li><a href="/allStores">      	<i class="fa fa-tags fa-2x"></i></a></li>
                     <li class="active"><a href="/saleWatch"><i class="fa fa-binoculars fa-2x"></i></a></li>
-                     <li><a href="/account"><i class="fa fa-cog fa-2x"></i></a></li>
-
+                    <li role="button" class="dropdown">
+                    	<a href="#" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-expanded="true"><i class="fa fa-cog fa-2x"></i><span class="caret"></span></a>
+                     	<ul class="dropdown-menu" role="menu" aria-labelledby="dlabel">
+                     		<li><a tabindex="-1" href="/account">Log In</a></li>
+                     		<li><a tabindex="-1" href="/signup">Sign Up</a></li>
+                     	</ul>
+                    </li>
                 </ul>
             </div>
 

@@ -21,6 +21,7 @@ var mystores = require('./routes/mystores');
 var allstores = require('./routes/allstores'); 
 var salewatch = require('./routes/salewatch'); 
 var help = require('./routes/help'); 
+var signup = require('./routes/signup'); 
 //var stick = require('./public/js/sticky/jquery.sticky'); 
 // Example route
 // var user = require('./routes/user');
@@ -62,6 +63,7 @@ app.get('/account', account.view);
 app.get('/mystores', mystores.view); 
 app.get('/allstores', allstores.view);
 app.get('/salewatch', salewatch.view);
+app.get('/signup', signup.view); 
 //app.get('/salewatch_alternative', salewatch.view);
 
 //app.post('/salewatch', salewatch.unwatchSale); 
